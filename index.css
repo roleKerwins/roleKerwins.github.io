@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(default.png);
+    height: 100vh;
+    background-size:100% 100%;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin: 15px;
+}
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: .6s ease;
+    border-radius: 20px;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.title{
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+    font-family: Century Gothic;
+}
+.title2{
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left:25%;
+    transform: translate(-50%,-50%);
+}
+.typing {
+    color: white;
+    font-size: 2em;
+    width: 16em;
+    height: 1.5em;
+    border-right: 1px solid transparent;
+    animation: typing 1s steps(42, end), blink-caret .75s step-end infinite;
+    font-family: Consolas, Monaco;
+    word-break: break-all;
+    overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 16em;
+    }
+}
+
+/* 光标 */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    150% {
+        border-color: currentColor;
+    }
+}
+.icon-arrow {
+    width: 100px;
+    height: 100px;
+    /*设置所有动画的效果：0.3s 淡出效果*/
+    transition: all .3s ease-out;
+}
+.icon-arrow-rotate {
+    /*旋转180度*/
+    transform: rotate(180deg);
+}

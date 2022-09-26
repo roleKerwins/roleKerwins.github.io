@@ -1,0 +1,38 @@
+* {
+    margin:0;
+    padding:0;
+}
+.num{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    top:50%;
+    left:30%;
+    padding: 30px;
+}
+.num2{
+    height: 500px;
+    margin-left: 20%;
+    float: left;
+
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(default.png);
+    height: 100vh;
+    background-size:100% 100%;
+    background-position: center;
+}
+/* .zero{
+    background-color: aquamarine;
+} */
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    background-color: white;
+    border-radius :20px;
+    transition: .6s ease;
+    padding: 5px 20px;
+}
