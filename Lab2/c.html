@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>c</title>
+    <script id="vertex-shader" type="x-shader/x-vertex">
+	attribute vec4 vPosition;
+	void main(){
+		gl_Position = vPosition;
+	}
+	</script>
+
+    <script id="fragment-shader" type="x-shader/x-fragment">
+	precision mediump float;
+	void main(){
+		gl_FragColor = vec4( 1.0, 0.0, 0.0, 1.0 );
+	}
+	</script>
+
+	
+	<script type="text/javascript" src=".\js\webgl-utils.js"></script>
+	<script type="text/javascript" src=".\js\initShaders.js"></script>
+	<script type="text/javascript" src=".\js\gl-matrix-min.js"></script>
+	
+	<script type="text/javascript" src="c.js"></script>
+</head>
+
+<body onload="init()">
+    <h2> Sierpinski Gasket in line</h2>
+    <canvas id="gl-canvas" width="300" height="300">你的浏览器不支持HTML5 canvas元素</canvas>
+	<fieldset>
+	    <h3>选择1-4其中的一个数</h3><br>
+	    <select id="num" size="4">
+	        
+	        <option value="1">1</option>
+	        <option value="2">2</option>
+	    	<option value="3">3</option>
+	    	<option value="4">4</option>
+	    </select>
+	</fieldset>
+</body>
+
+</html>
